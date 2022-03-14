@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en" th="http://www.thymeleaf.org">
+<head th:replace="/fragments/header :: header">
+</head>
+<body>
+	<nav th:replace="/fragments/header :: navbar"></nav>
+	<main class="container">	
+		<h1>403 - Access is denied</h1>
+        <div th:inline="text">Hello '[[${#httpServletRequest.remoteUser}]]',
+            you do not have permission to access this page.
+        </div>        
+	</main>
+	<footer th:replace="/fragments/footer :: footer"> </footer>
+</body>
+</html>

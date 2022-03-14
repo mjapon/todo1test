@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en" th="http://www.thymeleaf.org">
+<head th:replace="/fragments/header :: header">
+</head>
+<body>
+	<nav th:replace="/fragments/header :: navbar"></nav>
+	<main class="container">
+		<h1 th:if="${errorMessage}" th:utext="${errorMessage}">Error</h1>
+		<h1 th:if="!${errorMessage}">404 - Page does not exist</h1>
+		<a href="index.html" th:href="@{/home}">Back to Home Page</a>
+	</main>
+	<footer th:replace="/fragments/footer :: footer"> </footer>
+</body>
+</html>

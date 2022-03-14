@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en" th="http://www.thymeleaf.org">
+<head th:replace="/fragments/header :: header">
+</head>
+<body>
+	<nav th:replace="/fragments/header :: navbar"></nav>
+
+	<main class="container">
+		<div class="bg-light p-5 rounded">
+			<h1>Todo1 Shoping Center</h1>
+			<p class="lead">Todo1 Shoping Center excercise.</p>
+			<a class="btn btn-lg btn-primary" th:href="@{'/home'}"
+				role="button"> Shop </a>
+		</div>
+	</main>
+
+	<footer th:replace="/fragments/footer :: footer"> </footer>
+
+</body>
+</html>
