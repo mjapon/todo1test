@@ -9,18 +9,6 @@ public class MainController {
 	@GetMapping("/")
 	public String index() {
 		return "index";
-	}
-	
-	/*
-	@GetMapping("/error")
-	public String errorView() {
-		return "error";
-	}
-	
-	@GetMapping("/403")
-    public String unauthorizedView() {
-		return "403";
-    }
-    */
+	}	
 
 }
